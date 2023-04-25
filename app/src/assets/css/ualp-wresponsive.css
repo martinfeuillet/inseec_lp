@@ -1,0 +1,94 @@
+.ualp-mobile-form {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .ualp-container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .areas-activity-items {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /*header {*/
+    /*    display: none;*/
+    /*}*/
+
+    .ualp-w-adpt {
+        width: 100%;
+    }
+
+    .ualp-top-cover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(http://localhost:8888/lp_inseec/app/src/assets/img/header.jpg);
+        background-size: cover;
+    }
+
+    .ualp-form-wrapper {
+        position: relative;
+    }
+
+
+    .ualp-desktop-form {
+        display: none;
+    }
+
+    .ualp-mobile-form {
+        display: block;
+    }
+
+    .ualp-form-wrapper {
+        width: 100%;
+        left: 0;
+    }
+
+    .first-three-years-card {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+        padding: 60px;
+        padding-left: 60px;
+    }
+
+    .ualp-section-link {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .areas-activity {
+        text-align: center;
+    }
+
+    section {
+        margin: 2rem 0 !important;
+    }
+
+    .first-three-years-items {
+        gap: 10rem;
+        padding: 10rem 0 1rem 0;
+    }
+
+    .jobs-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 1rem;
+    }
+
+    .jobs-items ul {
+        margin: 0;
+    }
+
+    .first-three-years-col-1 {
+        background: var(--ualp-clr-orange);
+        left: 50%;
+        top: -40px;
+        transform: translateX(-50%);
+    }
+}
+
+@media screen and (max-width: 900px) {}

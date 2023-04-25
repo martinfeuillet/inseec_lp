@@ -1,0 +1,123 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Sup de pub - JPO{% endblock %}
+
+{% block content %}
+    <div class="ualp-top-cover">
+        <div class="ualp-container ualp-presentation-wrapper">
+            <div class="ualp-discover-bloc ualp-w-adpt">
+                <div class="ualp-header-content">
+                    <div class="ualp-header-title">
+                        <h1 class="text-white">PORTES OUVERTES</h1>
+                    </div>
+                    <div>
+                        <p class="text-white first-line">Tu as envie de devenir un spécialiste en
+                            <span>ÉVÉNEMENTIEL</span></p>
+                        <p class="second-line">Nous t’invitons à venir visiter nos campus et découvrir les avantages de Sup de Pub</p>
+                    </div>
+                </div>
+                <div class="ualp-discover-btn">
+                    <a class="ualp-btn section-btn-click-orange change-outline-white">Découvrir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-blocs">
+        <div class="bloc-right">
+            {{ render_form | raw }}
+        </div>
+        <div class="bloc-left">
+            <section class="orange-bloc">
+                <div class="title">Participer à la prochaine JPO</div>
+                <div class="counting">
+                    <div class="days count">
+                        <div class="text">Jours</div>
+                        <div class="number daycounter">{{ next_event.days_to_go }}</div>
+                    </div>
+                    <span class="big_two_dots"><img src="{{ img_path }}/2dots.svg" alt=""></span>
+                    <div class="hours count">
+                        <div class="text">Heures</div>
+                        <div class="number hourcounter">{{ next_event.hours_to_go  }}</div>
+                    </div>
+                    <span class="big_two_dots"><img src="{{ img_path }}/2dots.svg" alt=""></span>
+                    <div class="minutes count">
+                        <div class="text">Minutes</div>
+                        <div class="number minutecounter">{{ next_event.minutes_to_go  }}</div>
+                    </div>
+                    <span class="big_two_dots"><img src="{{ img_path }}/2dots.svg" alt=""></span>
+                    <div class="seconds count">
+                        <div class="text">Secondes</div>
+                        <div class="number secondcounter">00</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="programs">
+                <h2>AU PROGRAMME</h2>
+                <p>Viens rencontrer nos équipes et nos étudiant·es lors de nos Portes Ouvertes, pour en apprendre plus
+                    sur nos formations, nos
+                    programmes et les métiers auxquels forment Sup de Pub. Nous répondrons à toutes tes questions
+                    concernant
+                    ton orientation et ton projet professionnel.</p>
+                <div class="three_blocks">
+                    {% for key in three_block_programs %}
+                        <div class="block-program">
+                            <div class="prgm-img">
+                                <img class="icon-absolute" src="{{ key.icon }}" alt="{{ key.title }}">
+                                <img src="{{ key.img }}" alt="{{ key.title }}">
+                            </div>
+                            <div class="text-program">
+                                <div class="title">{{ key.title }}</div>
+                                <div class="description">{{ key.description }}</div>
+                                <div class="subscribe"><a>S'inscrire &#8594;</a></div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
+            <section class="video_section">
+                <iframe height="315" src="https://www.youtube.com/embed/rncfF-iy8H8"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <div class="ualp-discover-btn ualp-subscribe-btn">
+                    <a class="ualp-btn section-btn-click-orange change-outline-orange">S'inscrire aux portes
+                        ouvertes</a>
+                </div>
+            </section>
+            <section>
+                <h2>Sup de Pub en quelques chiffres</h2>
+                <div class="slider-container" data-simple-slider>
+                    {% for slide in slider %}
+                        <div class="slide">
+                            <div class="slide-title">{{ slide.title | raw }}</div>
+                            <div class="filter"> </div>
+                            <img src="{{ slide.img }}" alt="{{ slide.title }}">
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="ualp-discover-btn ualp-subscribe-btn">
+                    <a class="ualp-btn section-btn-click-orange change-outline-orange">Brochure</a>
+                </div>
+            </section>
+
+            <section class="ours-campus-wrapper my-0">
+                <div class="ours-campus-inner ualp-container">
+                    <div class="ours-campus ualp-w-adpt">
+                        <h2 class="ours-campus-title">Nos Campus</h2>
+                        <div class="ours-campus-items">
+                            {% for campus, link in ours_campus %}
+                                <div class="our-campus-item">
+                                    <h3 class="our-campus-city">{{ campus }} </h3>
+                                    <a class="text-orange ff-montserrat400">S'inscrire <i
+                                                class="fas fa-arrow-right"></i></a>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+{% endblock %}

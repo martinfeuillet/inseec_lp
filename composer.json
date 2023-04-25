@@ -1,0 +1,12 @@
+{
+    "name": "inseec/app",
+    "autoload": {
+        "psr-4": {
+            "Inseec\\App\\": "app/src/"
+        }
+    },
+    "require": {
+        "twig/twig": "^3.5",
+        "ext-curl": "*"
+    }
+}

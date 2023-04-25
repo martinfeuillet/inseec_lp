@@ -1,0 +1,495 @@
+/*header*/
+
+.ualp-header-content{
+    color: white;
+    line-height: 21px;
+}
+
+.ualp-header-content .first-line{
+    font-family: 'Montserrat', "Bebas neue Pro", Sans-serif, serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 0 !important;
+    margin-top: 2rem;
+}
+
+.ualp-header-content .second-line{
+    max-width: 500px;
+    margin-top: 0 !important;
+}
+
+.text-white span{
+    font-family: 'Montserrat', "Bebas neue Pro", Sans-serif, serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+.ualp-col1,
+.ualp-nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.iti.iti--allow-dropdown.iti--show-flags {
+    width: 100%;
+}
+
+.ualp-col1 {
+    gap: 2rem;
+}
+
+.ualp-nav-link {
+    gap: 1rem;
+}
+
+.ualp-form-wrapper {
+    position: fixed;
+    left: 55%;
+    width: 30%;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+#ualp-form-consent {
+    font-size: 9px;
+}
+
+.ualp-criteria-items {
+    display: grid;
+    grid-template: auto / 1fr 1fr 1fr;
+}
+
+.ualp-criteria-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
+
+.ualp-criteria-item {
+    flex-direction: column;
+}
+
+.ualp-discover-bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-top: 60px;
+}
+
+/** Areas activity */
+.areas-activity-title {
+    margin: 1.5rem 0;
+}
+
+.areas-activity-items {
+    display: grid;
+    grid-template: auto / 25% 25% 25% 25%;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.areas-activity-card {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 1rem;
+}
+
+/** End Areas activity */
+
+/** Fist Three Years */
+.first-three-years-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.first-three-years-card {
+    position: relative;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 20px 20px 0px;
+    padding: 30px;
+    padding-left: 60px;
+    width: 70%;
+    margin-left: auto;
+}
+
+.first-three-years-col-1 {
+    background: var(--ualp-clr-orange);
+    border-radius: 5.1282px;
+    width: 80px;
+    height: 80px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    left: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-three-years-title>span {
+    font-family: bbn;
+
+}
+
+/** End Fist Three Years */
+
+/** Jobs */
+.jobs-wrapper {
+    padding: 60px 0 180px 0;
+}
+
+.jobs-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+/** End Jobs */
+
+/** Cursus */
+.cursus-wrapper {
+    padding: 40px 0 30px 0;
+}
+
+.cursus {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+/** Integer */
+.integer-wrapper {
+    background-color: var(--ualp-clr-orange);
+    padding: 50px 0;
+    position: relative;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.integer-logo-wrapper {
+    border: 2px solid;
+    border-radius: 50%;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.interger-bar {
+    height: 40px;
+    width: 4px;
+    margin: 2px 0;
+}
+
+.integer-logo-list,
+.integer-content,
+.integer-description-wrapper,
+.integer-descriptions {
+    display: flex;
+}
+
+.integer-description-wrapper {
+    gap: 1.2rem;
+}
+
+.integer-logo-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.integer-content {
+    align-items: flex-start;
+    margin-top: 40px;
+}
+
+.interger-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.integer-descriptions {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+    margin: 1rem;
+}
+
+/* Our campus */
+.ours-campus-wrapper {
+    padding: 50px 0;
+}
+
+.our-campus-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+
+.our-campus-city {
+    font-family: 'Inter', "Bebas neue Pro", Sans-serif, serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 80%;
+}
+
+.ours-campus-items {
+    margin-top: 20px;
+}
+
+/* slider */
+.slider-container{
+    width: 100%;
+    padding-bottom: 25%;
+    height: 400px;
+}
+
+
+.slider-container .slide {
+    position: relative;
+    width: 100%;
+}
+
+.slider-container .slide .filter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background: #000;
+    opacity: .5;
+    z-index: 5;
+}
+
+.slider-container .slide .slide-title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 700;
+    width: 400px;
+    z-index: 10;
+    text-align: left;
+    line-height: 1;
+}
+
+.slider-container .slide .slide-title span {
+    font-family: 'Bebas Neue Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 160px;
+    text-align: left;
+    line-height: 1;
+}
+
+
+.slider-container .slide img {
+    height: 400px;
+    width: 100%;
+}
+
+/* blocs */
+.container-blocs{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.bloc-right{
+    width: 40%;
+    padding: 0 1rem;
+}
+
+.bloc-left{
+    width: 60%;
+    padding: 0 2rem;
+}
+
+/*orange-bloc*/
+.orange-bloc{
+    background-color: var(--ualp-clr-orange);
+    border-radius: 15px;
+    color: #fff;
+    display: flex;
+    padding: 1.3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.orange-bloc .title{
+    font-weight: 700;
+    width: 50%;
+}
+
+.orange-bloc .counting{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:75px;
+}
+
+.count .text{
+    font-family: 'Bebas Neue Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.number{
+    background: white;
+    width: 48px;
+    height: 55px;
+    border-radius: 5px;
+    font-family: "Bebas neue Pro", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: #2A2A2A;
+}
+
+.big_two_dots img{
+    position: relative;
+    top: 10px;
+}
+
+
+/*three_blocks*/
+.three_blocks{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.block-program{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 20px 20px 0px;
+}
+
+.text-program{
+    margin: auto 1rem auto 4rem;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+}
+
+.text-program .title{
+    font-family: 'Bebas Neue Pro', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.text-program .description{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2A2A2A;
+}
+
+.text-program .subscribe a, .our-campus-item a{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #FF7203;
+    transition: 0.2s ease-out;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.text-program .subscribe a:hover, .our-campus-item a:hover{
+    font-size: 16px;
+}
+
+/*block program*/
+
+.block-program{
+    display: flex;
+}
+
+.prgm-img{
+    position: relative;
+}
+
+.icon-absolute{
+    position: absolute;
+    right: -40px;
+    bottom: 60px;
+    z-index: 1;
+}
+
+/*video*/
+
+.video_section iframe{
+    border-radius: 20px;
+    margin: auto;
+    width: 100%;
+    height: 338px;
+    border: none;
+}
+
+.ualp-subscribe-btn{
+    text-align: center;
+    margin: 1.6rem auto auto auto;
+}
+
+
+/** Footer */
+
+.ualp-social-network-link {
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}

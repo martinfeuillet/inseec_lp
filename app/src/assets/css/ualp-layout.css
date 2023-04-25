@@ -1,0 +1,49 @@
+.ualp-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ualp-container {
+    width: 1100px;
+    margin: auto;
+}
+
+.ualp-nav {
+    padding: 20px 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+.ualp-top-cover {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 82.85%), url(http://localhost:8888/lp_inseec/app/src/assets/img/header.jpg);
+    padding: 20px 0px 30px 0px;
+    background-size: cover;
+}
+
+.ualp-presentation-wrapper {
+    display: flex;
+
+}
+
+footer {
+    padding: 20px 0;
+}
+
+.ualp-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ualp-social-network {
+    display: flex;
+    gap: .7rem;
+}

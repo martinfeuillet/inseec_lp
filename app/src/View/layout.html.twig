@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Inseec{% endblock %}</title>
+    {% block stylesheets %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-base.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-layout.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/omnes-form-public.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-modules.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-states.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-theme.css">
+        <link rel="stylesheet" href="http://localhost:8888/lp_inseec/app/src/assets/css/ualp-wresponsive.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    {% endblock %}
+</head>
+<body>
+<header>
+    <nav class="ualp-nav">
+        <div class="ualp-navbar ualp-container">
+            <div class="ualp-col1">
+                <div class="ualp-logo-wrapper">
+                    <a href=""><img src="{{ img_path }}/logo.svg" alt="" class="ualp-logo"></a>
+                </div>
+                <div class="ualp-nav-link">
+                    <a href="" class="ualp-link">Accueil</a>
+                    <a href="" class="ualp-link">Bachelor</a>
+                    <a href="" class="ualp-link">Master</a>
+                </div>
+            </div>
+            <div class="ualp-col2">
+                <div class="ualp-btn-list">
+                    <a href="" class="ualp-btn ualp-outline-orange">Postuler</a>
+                    <a href="" class="ualp-btn ualp-outline-orange">Brochure</a>
+                    <a href="" class="ualp-btn ualp-outline-orange">Portes ouvertes</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+<footer>
+    <div class="ualp-footer ualp-container">
+        <div class="ualp-social-network">
+            <a href="" class="ualp-social-network-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="ualp-social-network-link"><i class="fab fa-twitter"></i></a>
+            <a href="" class="ualp-social-network-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" class="ualp-social-network-link"><i class="fab fa-youtube"></i></a>
+            <a href="" class="ualp-social-network-link"><i class="fab fa-instagram"></i></a>
+            <a href="" class="ualp-social-network-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <div class="ualp-supdepub-link">
+            <a href="supdepub.com" class="ff-montserrat400 text-white tt-none">supdepub.com</a>
+        </div>
+    </div>
+</footer>
+
+{% block javascripts %}
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.5/js/intlTelInput.min.js"></script>
+    <script src="http://localhost:8888/lp_inseec/app/src/assets/js/ualp-event.js"></script>
+    <script src="https://rawgit.com/ruyadorno/simple-slider/master/dist/simpleslider.min.js"></script>
+{% endblock %}
+</body>
+</html>
