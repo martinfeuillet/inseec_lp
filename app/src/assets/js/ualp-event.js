@@ -40,7 +40,7 @@
         })
 
         //     everytime we click on the event, we change the value on the two selects
-        omnesEvent.on('click', function (e) {
+        omnesEvent.on('click', function () {
             $(this).addClass('active').siblings().removeClass('active')
             let campus = $(this).data('campus')
 
@@ -56,7 +56,7 @@
         })
 
         //     everytime we change the value of the select, we change the value on the event
-        selectCampus.on('change', function (e) {
+        selectCampus.on('change', function () {
             let campus = $(this).find('option:selected').text()
             let days = []
             omnesEvent.each(function () {
@@ -77,7 +77,7 @@
 
 
     // error message if the user doesn't fill the first part of the form
-        goToPartTwo.on('click', function (e) {
+        goToPartTwo.on('click', function () {
             if (selectCampus.val() === null || selectDay.val() === null || !omnesEvent.hasClass('active')) {
                 msg_error.text("veuillez selectionner une ville, une date et un événement")
             }

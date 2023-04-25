@@ -5,7 +5,7 @@
     width: 100%;
     font-family: "Bebas neue Pro", Sans-serif, serif;
     background: #FFFFFF;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 1.5rem 1rem 0 1rem;
 }
@@ -115,7 +115,7 @@
 
 @media screen and (min-width: 1024px  ) {
     .label_and_hours .label{
-        padding: 0rem 2rem 0 1rem;
+        padding: 0 2rem 0 1rem;
     }
 
     .date_and_city{

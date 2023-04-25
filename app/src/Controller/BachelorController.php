@@ -129,7 +129,7 @@ class BachelorController
                     <p class="msg_error"></p>
                     <div class="of-select">
                         <select name="of_city" id="omnes_form">
-                            <option selected="true" disabled="disabled" value="">Ville</option>
+                            <option selected disabled="disabled" value="">Ville</option>
                             <?php
                             foreach ( $campus as $id => $city ) {
                                 echo '<option value="' . $id . '">' . $city . '</option>';
@@ -137,7 +137,7 @@ class BachelorController
                             ?>
                         </select>
                         <select name="of_day" id="omnes_form">
-                            <option selected="true" disabled="disabled" value="">Jour</option>
+                            <option selected disabled="disabled" value="">Jour</option>
                             <?php
                             foreach ( $date_of_events as $date => $date_format ) {
                                 echo "<option value='$date'>$date_format</option>";
@@ -195,7 +195,7 @@ class BachelorController
                                 echo '<input type="text" name="champ_' . $field['name'] . '" id="champ_' . $field['name'] . '" placeholder="' . $field['label'] . '*">';
                             }
                             if ( in_array( $field_name , $select_input ) ) {
-                                echo '<select name="champ_' . $field['name'] . '" id="champ_' . $field['name'] . '"><option selected="true" disabled="disabled" value="">' . $field['label'] . '</option>';
+                                echo '<select name="champ_' . $field['name'] . '" id="champ_' . $field['name'] . '"><option selected disabled="disabled" value="">' . $field['label'] . '</option>';
                                 foreach ( $field['values'] as $value ) {
                                     echo '<option value="' . $value['id'] . '">' . $value['label'] . '</option>';
                                 }
