@@ -1,0 +1,132 @@
+.ualp-btn {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 1px solid;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+}
+
+.section-btn-click-orange:hover {
+    color: #000;
+    background: #fff;
+    border: #fff;
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-2 {
+    margin: 2rem 0;
+}
+
+.my-1 {
+    margin: 1rem 0;
+}
+
+.ualp-link {
+    text-transform: uppercase;
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+.ualp-link:hover {
+    font-size: 18px;
+}
+
+.ualp-w-adpt {
+    width: 50%;
+}
+
+.ualp-form-group {
+    margin: 10px 0;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.my-0 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-48 {
+    font-size: 48px;
+}
+
+.ualp-ul li::before {
+    content: "\2022";
+    color: var(--ualp-clr-orange);
+    font-weight: bold;
+    font-size: 35px;
+    padding: 10px;
+    line-height: .3;
+}
+
+.ualp-ul li {
+    display: flex;
+    align-items: center;
+}
+
+.tt-none {
+    text-transform: none;
+}
+
+.ff-montserrat400 {
+    font-family: montserrat400;
+}
+
+.ff-montserrat500 {
+    font-family: montserrat500;
+}
+
+.section-btn-click-white,
+.section-btn-click-orange {
+    position: relative;
+    z-index: 1;
+    margin-left: 5px;
+}
+
+.section-btn-click-white::before,
+.section-btn-click-orange::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 1.7px solid;
+    left: -5px;
+    bottom: -5px;
+    z-index: 0;
+}
+
+.ualp-section-link {
+    width: 70%;
+    margin: 20px 0;
+    margin-left: auto;
+}
+
+.ualp-form-title {
+    text-align: center;
+    margin: 20px 0 40px 0;
+}
+
+.ualp-form-row {
+    display: grid;
+    grid-template: auto / 1fr 1fr;
+    gap: 1rem;
+}

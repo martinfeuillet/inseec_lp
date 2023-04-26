@@ -1,0 +1,125 @@
+.text-white {
+    color: white;
+}
+
+.text-orange {
+    color: var(--ualp-clr-orange);
+}
+
+.text-light-grey-v4 {
+    color: var(--ualp-clr-grey-v4);
+}
+
+.ualp-full-orange {
+    border-color: var(--ualp-clr-orange);
+    background-color: var(--ualp-clr-orange);
+    color: var(--ualp-clr-white);
+}
+
+.ualp-outline-orange {
+    border-color: var(--ualp-clr-orange);
+    color: var(--ualp-clr-orange);
+    transition: .2s ease-in-out;
+}
+
+.ualp-outline-orange:hover {
+    color: #fff;
+    background: var(--ualp-clr-orange);;
+}
+
+header {
+    box-shadow: 0px 0px 5px var(--ualp-deg-black25);
+    background: white;
+}
+
+.ualp-form-wrapper {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+input,
+select {
+    background-color: var(--ualp-clr-grey-v2);
+}
+
+#ualp-form-consent {
+    color: var(--ualp-clr-grey-v3);
+}
+
+.ualp-form-group {
+    display: flex;
+    gap: 1rem;
+}
+
+.areas-activity-card {
+    background: #FFFFFF;
+}
+
+.first-three-years-card {
+    background: white;
+}
+
+.first-three-years-title {
+    color: white;
+}
+
+.jobs-wrapper {
+    background-color: var(--ualp-clr-grey-v2);
+}
+
+.cursus-wrapper {
+    background: linear-gradient(54deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%), url(amogh-manjunath-HksFlo1t8iA-unsplash);
+
+}
+
+.integer-logo-wrapper {
+    border-color: white;
+}
+
+.interger-bar {
+    background-color: white;
+}
+
+footer {
+    background-color: var(--ualp-clr-orange);
+}
+
+.our-campus-city {
+    -webkit-text-stroke: 1px var(--ualp-clr-orange);
+    color: white;
+}
+
+.ualp-social-network-link {
+    border-color: white;
+    color: white;
+}
+
+.our-campus-item {
+    border-bottom-color: #E5E5E5;
+}
+
+.section-btn-click-white {
+    color: var(--ualp-clr-orange);
+    background-color: white;
+    border-color: white;
+}
+
+.section-btn-click-orange {
+    color: white;
+    background-color: var(--ualp-clr-orange);
+    border-color: var(--ualp-clr-orange);
+}
+
+.section-btn-click-white::before {
+    color: white;
+}
+
+.section-btn-click-orange::before {
+    color: var(--ualp-clr-orange);
+}
+
+.change-outline-white::before {
+    color: white;
+    z-index: -1;
+}
+

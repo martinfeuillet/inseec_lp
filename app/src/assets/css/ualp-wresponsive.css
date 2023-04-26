@@ -1,0 +1,251 @@
+.ualp-mobile-form {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .ualp-container {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .areas-activity-items {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /*header {*/
+    /*    display: none;*/
+    /*}*/
+
+    .ualp-w-adpt {
+        width: 100%;
+    }
+
+    .ualp-top-cover {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/app/src/assets/img/header.jpg);
+        background-size: cover;
+    }
+
+    .ualp-form-wrapper {
+        position: relative;
+    }
+
+
+    .ualp-desktop-form {
+        display: none;
+    }
+
+    .ualp-mobile-form {
+        display: block;
+    }
+
+    .ualp-form-wrapper {
+        width: 100%;
+        left: 0;
+    }
+
+    .first-three-years-card {
+        width: 100%;
+        border-radius: 0px 0px 20px 20px;
+        text-align: center;
+        padding: 60px;
+        padding-left: 60px;
+    }
+
+    .ualp-section-link {
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .areas-activity {
+        text-align: center;
+    }
+
+    section {
+        margin: 2rem 0 !important;
+    }
+
+    .first-three-years-items {
+        gap: 10rem;
+        padding: 10rem 0 1rem 0;
+    }
+
+    .jobs-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        margin-top: 1rem;
+    }
+
+    .jobs-items ul {
+        margin: 0;
+    }
+
+    .first-three-years-col-1 {
+        background: var(--ualp-clr-orange);
+        left: 50%;
+        top: -40px;
+        transform: translateX(-50%);
+    }
+
+    
+}
+
+@media screen and (max-width: 1024px) {
+    .our-campus-item{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    .omnes_form{
+        margin-top: 2rem;
+    } 
+
+    .prgm-img img:nth-child(2){
+        width: 260px;
+    }
+    
+
+}
+
+@media screen and (max-width: 915px) {
+    .orange-bloc{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .orange-bloc .title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .prgm-img img:nth-child(2){
+        width: 210px;
+    }
+}
+
+@media screen and (max-width: 866px) {
+    .text-program{
+        padding: 1.5rem 0;
+        margin: auto 1rem;
+    }
+
+    .orange-bloc .title{
+        width: 100%;
+        text-align: center;
+    }
+
+    .prgm-img img:nth-child(1){
+        display: none;
+    }
+    
+    .prgm-img img:nth-child(2){
+        height: auto;
+    }
+    
+    .prgm-img {
+        display: flex;
+    }
+    
+}
+
+@media screen and (min-width : 768px) {
+    .sticky-down,.icon-hamburger{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   
+    .prgm-img img:nth-child(1){
+        display: block;
+    }
+
+    .container-blocs{
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    /* .ualp-discover-btn{
+        display: none;
+    } */
+
+    .bloc-right, .bloc-left{
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+    .orange-bloc .counting{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .programs{
+        text-align: center;
+    }
+
+    .block-program{
+        flex-direction: column;
+    }
+
+    .prgm-img img:nth-child(2){
+        width: 100%;
+    }
+
+    .prgm-img img:nth-child(1){
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -38px;
+    }
+    
+    .prgm-img {
+        width: 100%;
+    }
+
+    .text-program .title{
+        margin-top: 2rem;
+    }
+
+    .slider-container .slide .slide-title{
+        bottom: 120px;
+    }
+
+    .slider-container{
+        height: 300px;
+    }
+
+    .ualp-container{
+        padding: 0 ;
+    }
+
+    .ualp-footer{
+        padding: 0 2rem;
+    }
+    
+    .ualp-navbar{
+        padding: 0 2rem;
+    }
+
+    .ualp-top-cover{
+        height: 400px;
+    }
+
+    .ualp-header-content{
+        padding: 0 2rem;
+    }
+
+    .omnes_form{
+        margin-top: -8rem;
+    }
+
+    .ualp-col2, .ualp-nav-link, .hide-sm{
+        display: none;
+    }
+
+
+   
+    
+}

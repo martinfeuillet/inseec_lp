@@ -1,0 +1,134 @@
+@font-face {
+    font-family: bbn;
+    src: url("../fonts/bebasneue-regular.ttf");
+}
+
+@font-face {
+    font-family: montserrat400;
+    src: url("../fonts/montserrat-regular.ttf");
+}
+
+@font-face {
+    font-family: montserrat500;
+    src: url("../fonts/montserrat-medium.ttf");
+}
+
+@font-face {
+    font-family: montserrat300;
+    src: url("../fonts/montserrat-light.ttf");
+}
+
+*:not(i) {
+    --ualp-clr-orange: #EE7203;
+    --ualp-clr-light-grey: #E5E5E5;
+    --ualp-clr-white: #FFFFFF;
+    --ualp-clr-grey: #2A2A2A;
+    --ualp-clr-grey-v2: #F4F4F4;
+    --ualp-clr-grey-v3: #6C6C6C;
+    --ualp-clr-grey-v4: #AAAAAA;
+    --ualp-deg-black25: rgba(0 0 0/ 25%);
+    --ualp-deg-black35: rgba(0 0 0/ 35%);
+    box-sizing: border-box;
+    font-family: montserrat400;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+button {
+    font-family: bbn;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    font-size: 16px;
+}
+
+span {
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:active,
+select:active {
+    border: none;
+    outline: none;
+}
+
+select {
+    appearance: none;
+    position: relative;
+}
+
+select::before {
+    content: "\f0d7";
+    position: absolute;
+    z-index: 10;
+    right: 10px;
+}
+
+.ualp-form-group {
+    position: relative;
+}
+
+.ualp-form-group:has(select)::after {
+    content: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSdibGFjaycgaGVpZ2h0PScyNCcgdmlld0JveD0nMCAwIDI0IDI0JyB3aWR0aD0nMjQnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZD0nTTcgMTBsNSA1IDUtNXonLz48cGF0aCBkPSdNMCAwaDI0djI0SDB6JyBmaWxsPSdub25lJy8+PC9zdmc+);
+    position: absolute;
+    z-index: 0;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+input[type="checkbox"] {
+    width: auto !important;
+}
+
+section {
+    margin-top: 2rem !important;
+    margin-bottom: 5rem !important;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

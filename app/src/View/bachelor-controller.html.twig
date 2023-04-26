@@ -1,0 +1,166 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}Sup de pub - JPO{% endblock %}
+
+{% block content %}
+    <div class="ualp-top-cover">
+        <div class="ualp-container ualp-presentation-wrapper">
+            <div class="ualp-discover-bloc ualp-w-adpt">
+                <div class="ualp-header-content">
+                    <div class="ualp-header-title"><h1 class="text-white">PORTES OUVERTES</h1></div>
+                    <p class="text-white">Tu as envie de devenir un spécialiste en ÉVÉNEMENTIEL</p>
+                    <p>Nous t’invitons à venir explorer nos campus et découvrir les avantages de Sup de Pub</p>
+                </div>
+                <div class="ualp-discover-btn">
+                    <a href="" class="ualp-btn section-btn-click-orange change-outline-white">Découvrir</a>
+                </div>
+            </div>
+            <div class="ualp-desktop-form"></div>
+        </div>
+    </div>
+
+
+
+    <section class="areas-activity-wrapper ualp-container">
+        <div class="areas-activity ualp-w-adpt">
+            <h2 class="areas-activity-title">8 domaines d’activités</h2>
+            <div class="areas-activity-items">
+                {% for title, picture in areas_activity %}
+                    <div class="areas-activity-card">
+                        <div class="area-activity-logo-wrapper">
+                            <img src="{{ picture }}" srcset="{{ picture }}" alt="{{ title }}" class="area-activity-logo">
+                        </div>
+                        <h3 class="area-activity-title">{{ title }}</h3>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <section class="areas-activity-wrapper ualp-container">
+        <div class="areas-activity ualp-w-adpt">
+            <h2 class="areas-activity-title">Les 3 première années chez Sup de Pub</h2>
+            <p>Les bachelors de Sup de Pub te préparent aux métiers de demain : pédagogie immersive, cas concrets, stages, séminaires, masterclass.</p>
+            <div class="first-three-years-items">
+                {% for level, item in first_three_years %}
+                    <div class="first-three-years-card">
+                        <div class="first-three-years-col-1">
+                            <div class="first-three-years-title">
+                                <span class="fs-32">{{ level }}</span>
+                                <span class="fs-20">{{ item[0] }}</span>
+                            </div>
+                        </div>
+                        <div class="first-three-years-col-2">
+                            {% if item[1] is not empty %}
+                                <h3 class="first-three-years-subtitle text-orange">{{ item[1] | raw }}</h3>
+                            {% endif %}
+                            {% if item[2] is not empty %}
+                                <span class="first-three-years-subdescription text-light-grey-v4">{{ item[2] | raw }} </span>
+                            {% endif %}
+                            {% if item[3] is not empty %}
+                                <span class="first-three-years-description">{{ item[3] | raw }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <p>*Alternance possible 2j école/3j entreprise. Formation certifiante</p>
+            <div class="ualp-section-link"><a href="" class="ualp-btn section-btn-click-orange">Je postule</a></div>
+        </div>
+    </section>
+    <section class="jobs-wrapper my-0">
+        <div class="jobs-inner ualp-container">
+            <div class="jobs ualp-w-adpt">
+                <h2 class="jobs-title">des dizaines de métiers différents</h2>
+                <br>
+                <h3 class="jobs-subtitle text-orange fs-32">Quelques exemples</h3>
+                <div class="jobs-items">
+                    <ul class="ualp-ul">
+                        <li>Chargé·e de Communication</li>
+                        <li>Community manager</li>
+                        <li>Chef·fe de Projet</li>
+                        <li>Designer d’interfaces</li>
+                        <li>Directeur·trice artistique</li>
+                        <li>Brand Content Manager</li>
+                        <li>Créateur·trice de contenu</li>
+                    </ul>
+                    <ul class="ualp-ul">
+                        <li>Responsable Marque</li>
+                        <li>Social Media Manager</li>
+                        <li>Data Analyst</li>
+                        <li>Responsable événementiel</li>
+                        <li>Relations Presse</li>
+                        <li>Chef·fe de Produit</li>
+                        <li>Vidéaste</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="integer-wrapper my-0">
+        <div class="integer-inner ualp-container">
+            <div class="integer ualp-w-adpt">
+                <h2 class="integer-title text-white">Comment intégrer Sup de Pub :</h2>
+                <div class="integer-content">
+                    <div class="integer-logo-list">
+                        <div class="integer-logo-wrapper"><img src="{{ img_path }}/integer/candidature.svg" srcset="{{ img_path }}/
+                    integer/candidature.svg" class="interger-logo" alt="Candidature"></div>
+                        <div class="interger-bar"></div>
+                        <div class="integer-logo-wrapper"><img src="{{ img_path }}/integer/admission.svg" srcset="{{ img_path }}/
+                    integer/admission.svg" class="interger-logo" alt="Admission"></div>
+                        <div class="interger-bar"></div>
+                        <div class="integer-logo-wrapper"><img src="{{ img_path }}/integer/inscription.svg" srcset="{{ img_path }}/
+                    integer/inscription.svg" class="interger-logo" alt="Inscription"></div>
+                    </div>
+                    <div class="integer-descriptions">
+                        <div class="integer-description-wrapper text-white">
+                            <h3 class="integer-description-number fs-28">
+                                01.
+                            </h3>
+                            <div class="integer-description">
+                                <h3 class="fs-28 tt-none">Candidature en Ligne</h3>
+                                <span>Complète ton dossier en ligne ici</span>
+                            </div>
+                        </div>
+                        <div class="integer-description-wrapper text-white">
+                            <h3 class="integer-description-number fs-28">
+                                02.
+                            </h3>
+                            <div class="integer-description">
+                                <h3 class="fs-28 tt-none">Admission</h3>
+                                <span>Admission sur concours</span>
+                                <span>Écrits + Oral</span>
+                            </div>
+                        </div>
+                        <div class="integer-description-wrapper text-white">
+                            <h3 class="integer-description-number fs-28">
+                                03.
+                            </h3>
+                            <div class="integer-description">
+                                <h3 class="fs-28 tt-none">Inscription</h3>
+                                <span>Résultats sous 7 jours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="ualp-btn section-btn-click-white">Je postule</a>
+        </div>
+        <img src="{{ img_path }}/integer/icon.svg" srcset="{{ img_path }}/integer/icon.svg" class="interger-icon" alt="SupDePub Icon">
+    </section>
+    <section class="ours-campus-wrapper my-0">
+        <div class="ours-campus-inner ualp-container">
+            <div class="ours-campus ualp-w-adpt">
+                <h2 class="ours-campus-title">Nos Campus</h2>
+                <div class="ours-campus-items">
+                    {% for campus, link in ours_campus %}
+                        <div class="our-campus-item">
+                            <h3 class="our-campus-city">{{ campus }} </h3>
+                            <a href="{{ link }}" class="text-orange ff-montserrat400">S'inscrire <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
